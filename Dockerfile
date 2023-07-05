@@ -41,4 +41,6 @@ RUN yarn install
 
 COPY . .
 
-ENTRYPOINT yarn start
+EXPOSE 3000
+
+ENTRYPOINT tail -f /dev/null
